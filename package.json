@@ -1,0 +1,39 @@
+{
+  "name": "@mohayonao/learning-enzyme",
+  "description": "learning-enzyme",
+  "version": "0.0.0",
+  "author": "Nao Yonamine <mohayonao@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/mohayonao/learning-enzyme/issues"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "enzyme": "^2.5.1",
+    "eslint": "^3.9.1",
+    "eslint-plugin-react": "^6.5.0",
+    "mocha": "^3.1.2",
+    "npm-run-all": "^3.1.1",
+    "react-addons-test-utils": "^15.3.2",
+    "run-with-mocha": "^1.1.0",
+    "sinon": "^1.17.6"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohayonao/learning-enzyme.git"
+  },
+  "scripts": {
+    "lint": "eslint test",
+    "test": "mocha test",
+    "travis": "npm-run-all test lint"
+  }
+}

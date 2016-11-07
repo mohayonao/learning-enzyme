@@ -161,4 +161,20 @@ describe("Shallow Rendering API", () => {
       assert(wrapper.instance() instanceof A);
     });
   });
+
+  describe(".type() => String|Function|null", () => {
+    it("ノードが複数あるとエラーになる", () => {
+      const wrapper = shallow(
+        <div><a/><b/><i/></div>
+      );
+
+      assert(wrapper.type() === "div");
+
+      assert.throws(() => {
+        wrapper.children().type();
+      });
+
+      assert(wrapper.childAt(0).type() === "a");
+    });
+  });
 });
